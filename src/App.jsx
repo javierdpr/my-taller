@@ -8,6 +8,12 @@ import Home from "./pages/Home"
 import Contact from "./pages/Contact"
 import Galery from "./pages/Galery"
 
+/*
+el home hacer algun camcbio meterr alguna imagen 
+imagen de la puerta del taller
+va con doble click
+el contacto meterle algo guapo con las etiquetas
+*/
 function App() {
 
   return (

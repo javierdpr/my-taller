@@ -16,6 +16,7 @@ const Restauration = () => {
             </div>
             <div className='title'>
                 <h2>Chevrolet camaro</h2>
+                <p className='descripcion' >restauracion completa de carroceria y de interior</p>
             </div>
             <div className='car'>
                 <div>
@@ -29,6 +30,7 @@ const Restauration = () => {
             </div>
             <div className='title'>
                 <h2>Crevrelet nova</h2>
+                <p className='descripcion' >restauracion completa de carroceria, de interior y motor nuevo</p>
             </div>
             
             <div className='car'>
@@ -44,6 +46,7 @@ const Restauration = () => {
             </div>
             <div className='title'>
                 <h2>Chevrolet Corvete</h2>
+                <p className='descripcion' >restauracion completa de carroceria, interior y de motor</p>
             </div>
             <div className='car'>
                 <div>

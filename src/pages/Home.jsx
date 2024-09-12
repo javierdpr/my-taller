@@ -1,3 +1,4 @@
+import Mapa from "../components/map";
 
 
 const Home = () => {
@@ -52,6 +53,8 @@ const Home = () => {
                     restauraciones: Le damos un nueva vida a tu coche clasico.
                 </li>
             </div>
+            <h2 className="title">donde encontrarnos</h2>
+            <Mapa/>
         </main>
         </div>
     );
