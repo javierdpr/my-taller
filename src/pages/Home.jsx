@@ -1,4 +1,5 @@
 import Mapa from "../components/map";
+import entrada from "../img/entrada.jpg";
 
 
 const Home = () => {
@@ -13,7 +14,9 @@ const Home = () => {
             desde reparaciones generales hasta restauraciones completas. 
             Su conocimiento y experiencia con marcas de automóviles americanas les permite proporcionar un servicio excepcional y personalizado a cada cliente. 
             En American Garage, su coche americano está en manos seguras y expertas.</p>
-
+            <div>
+                <img src={entrada} className="imgentrada"/>
+            </div>
             <h2 className="title">Servicios</h2>
             <div className='servicios'>
                 <li>

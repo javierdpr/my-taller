@@ -27,15 +27,12 @@ return (
             <h2>Contactar</h2>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-        <label>Nombre</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Telefono</label>
-        <input type='number' name='user_number'/>
-        <label>Mensage</label>
-        <textarea name="message" />
-        <input type="submit" value="enviar" className='send'/>
+        <label>Cuentame</label>
+        <input type="text" name="user_name" placeholder='Nombre'/>
+        <input type="email" name="user_email" placeholder='Email'/>
+        <input type='number' name='user_number' placeholder='Telefono'/>
+        <textarea name="message" placeholder='Mensage'/>
+        <input type="submit" value="ENVIAR" className='send' />
     </form>
     </div>
     

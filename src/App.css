@@ -61,6 +61,10 @@ img{
   font-family: "Open Sans", sans-serif;
 }
 
+.imgentrada{
+  width: 100%;
+}
+
 .servicios{
   margin: 50px;
   padding-left: 50px;
@@ -145,6 +149,11 @@ img{
   flex-direction: column;
   align-items: center;
 }
+label{
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  margin-top: 10px;
+}
 form{
   display: flex;
   flex-direction: column;
@@ -157,24 +166,27 @@ form{
   color: var(--text-color);
 }
 
-label {
-  font-family: "Open Sans", sans-serif;
-}
+
 input{
-  margin: 5px;
+  margin: 0.75rem;
   width: 20rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
 }
 
 textarea{
-  margin: 5px;
+  margin: 0.75rem;
   width: 20rem;
   height: 5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
 }
 .send{
   color: var(--text-color);
   background-color: var(--secondary-color);
   width: 10rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 /*footer*/
 .footer{

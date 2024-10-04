@@ -11,8 +11,7 @@ import Galery from "./pages/Galery"
 /*
 el home hacer algun camcbio meterr alguna imagen 
 imagen de la puerta del taller
-va con doble click
-el contacto meterle algo guapo con las etiquetas
+el contacto meterle algo guapo con las etiquetas mirar en instagram o youtube lo del placholder se ponga en el borde
 */
 function App() {
 
