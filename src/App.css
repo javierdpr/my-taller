@@ -233,12 +233,29 @@ li {
   }
 
   .nav {
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    /* .nav now only contains logo and the .enlaces div. */
+    /* flex-wrap might not be needed here anymore if .enlaces is position:absolute */
+    display: flex; /* Ensure logo and .enlaces div are in a flex context if needed, though .enlaces goes absolute */
+    align-items: center; 
   }
 
+  /* New group for social icons and hamburger menu */
+  .header-right-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .redessociale {
+    /* Adjust margin for mobile if needed, e.g., reduce overall margin or specific side */
+    margin: 0 10px 0 0; /* Example: 10px to its right, 0 elsewhere */
+    display: flex; /* ensure icons inside are aligned if they are separate elements */
+    align-items: center;
+  }
+  
   .hamburger-menu {
     display: block; /* Show hamburger icon on mobile */
-    order: -1; /* Position hamburger icon before logo if nav is flex direction row */
+    /* order: -1; REMOVE THIS - order is now natural within header-right-group */
+    margin-left: 5px; /* Add some space between social icons and hamburger */
   }
 
   .enlaces {
@@ -263,8 +280,18 @@ li {
   }
 
   .enlaces .enlace {
-    margin: 10px 0;
+    display: block; /* Make links block-level for better stacking and width control */
+    width: 85%; /* Take up most of the menu width */
+    margin: 10px auto; /* Centered margin for spacing, 'auto' for horizontal centering if parent is not flex aligning items */
+    padding: 12px 0; /* Add some vertical padding for better clickability */
+    text-align: center; /* Center the text within the link */
     color: var(--secondary-color); /* Ensure links are visible on menu background */
+    border-radius: 4px; /* Optional: slightly rounded corners for links */
+    transition: background-color 0.2s ease-in-out; /* Optional: hover effect */
+  }
+
+  .enlaces .enlace:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: subtle hover effect */
   }
 
   .redessociale {
