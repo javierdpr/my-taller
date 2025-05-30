@@ -143,6 +143,25 @@ img{
   width: 500px;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none; /* Hidden by default, shown in media query */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 15px; /* Adjust as needed */
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
 /*contacto*/
 .contact{
   display: flex;
@@ -198,6 +217,7 @@ textarea{
   justify-content: space-around;
   margin-top: 30px;
 }
+
 .logofooter img{
   width: 150px;
 }
@@ -212,6 +232,46 @@ li {
     flex-direction: column;
   }
 
+  .nav {
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger icon on mobile */
+    order: -1; /* Position hamburger icon before logo if nav is flex direction row */
+  }
+
+  .enlaces {
+    display: none; /* Hide nav links by default on mobile */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color); /* Same as header or a different bg */
+    position: absolute;
+    top: 70px; /* Adjust based on header height */
+    left: 0;
+    padding: 10px 0;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .enlaces.mobile-menu-open {
+    display: flex; /* Show nav links when mobile menu is open */
+    max-height: 500px; /* Or enough height to show all links */
+  }
+
+  .enlaces .enlace {
+    margin: 10px 0;
+    color: var(--secondary-color); /* Ensure links are visible on menu background */
+  }
+
+  .redessociale {
+    /* Optionally hide or reposition social icons on mobile if needed */
+    /* display: none; */ 
+  }
+  
   .car{
     flex-direction: column;
     align-items: center;
